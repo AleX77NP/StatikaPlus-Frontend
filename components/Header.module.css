@@ -1,0 +1,17 @@
+.nav {
+  background-color: transparent;
+}
+.menu {
+  background-color: transparent;
+}
+@media (max-width: 1000px) {
+    .nav {
+      display: none;
+    }
+  }
+
+@media (min-width: 1000px) {
+    .menu {
+      display: none;
+    }
+  }
