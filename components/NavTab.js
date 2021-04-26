@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tabs, Tab, TabList, TabPanels, TabPanel, Text} from '@chakra-ui/react'
+import {Tabs, Tab, TabList, Text} from '@chakra-ui/react'
 
 const NavTab = () => {
     return (
