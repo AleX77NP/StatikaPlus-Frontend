@@ -28,7 +28,7 @@ const Header = () => {
                 </Box>
                 <Spacer />
                 <Box pl={5}>
-                <div class={styles.menu}>
+                <div className={styles.menu}>
                 <MenuHeader />
                 </div>
                 </Box>
