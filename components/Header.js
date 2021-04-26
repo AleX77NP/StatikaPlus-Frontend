@@ -1,13 +1,13 @@
 import React from 'react'
 import NavTab from './NavTab'
 import MenuHeader from './MenuHeader'
-import {Flex, Box, Spacer} from '@chakra-ui/react'
+import {Flex, Box, Spacer, Text} from '@chakra-ui/react'
 import Image from 'next/image'
 import styles from './Header.module.css'
 
 const Header = () => {
     return (
-        <div>
+        <div className={styles.main}>
             <Flex ml={10} mr={10} mt={10}
             direction="row"
             >
@@ -33,6 +33,15 @@ const Header = () => {
                 </div>
                 </Box>
             </Flex>
+            <div className={styles.slogan}>
+            <Text fontSize="3xl"
+            bgGradient="linear(to-l, #3C038C,#A60321)"
+            bgClip="text"
+            fontWeight="bold"
+            >
+             Najtraženiji među najboljima. Neka Vaš objekat iz snova postane stvarnost.
+            </Text>
+            </div>
         </div>
     )
 }

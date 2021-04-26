@@ -1,3 +1,19 @@
+.main {
+  position: relative;
+  height: 1400px;
+  background-image: url('/background.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+
+.slogan {
+  position: absolute;
+  top: 15%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+}
+
 .nav {
   background-color: transparent;
 }
@@ -7,6 +23,16 @@
 @media (max-width: 1000px) {
     .nav {
       display: none;
+    }
+    .slogan {
+      left: 50%;
+      top: 20%;
+    }
+  }
+
+  @media (max-width: 1400px) {
+    .slogan {
+      left: 50%;
     }
   }
 
