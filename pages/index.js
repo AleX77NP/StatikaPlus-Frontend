@@ -4,6 +4,7 @@ import About from '../components/About'
 import Description from '../components/Description'
 import Contact from '../components/Contact'
 import Form from '../components/Form'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <About />
         <Contact />
         <Form />
+        <Footer />
       </main>
     </>
   )
