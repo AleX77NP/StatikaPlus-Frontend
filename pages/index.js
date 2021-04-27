@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import About from '../components/About'
 import Description from '../components/Description'
 import Contact from '../components/Contact'
+import Form from '../components/Form'
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Description />
         <About />
         <Contact />
+        <Form />
       </main>
     </>
   )
