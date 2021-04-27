@@ -6,7 +6,7 @@ const Map = dynamic(() => import('./Map'), { ssr: false })
 
 const Contact = () => {
     return (
-        <div style={{marginTop: '40px' ,position: 'relative'}}>
+        <div style={{marginTop: '40px',position: 'relative'}}>
         <Text
         style={{marginBottom: '40px'}}
         fontSize="5xl"

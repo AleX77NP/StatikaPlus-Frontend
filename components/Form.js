@@ -12,7 +12,7 @@ import {
 
 const Form = () => {
     return (
-        <div style={{marginTop: '40px', marginBottom: '40px'}}>
+        <div style={{marginTop: '50px', marginBottom: '40px'}}>
           <Flex
           flexWrap="wrap" 
           alignItems="center"
