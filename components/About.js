@@ -1,9 +1,9 @@
 import React from 'react'
-import {Flex, Box, Spacer, Text, Heading} from '@chakra-ui/react'
+import {Flex, Box, Text} from '@chakra-ui/react'
 
 const About = () => {
     return (
-        <div style={{width: '400px', margin: 'auto', maxWidth: '95%', justifyContent: 'center'}}>
+        <>
             <Text 
             fontSize="5xl"
             fontWeight="thin"
@@ -11,27 +11,26 @@ const About = () => {
             >
                 Zašto Statikaplus ?
             </Text>
-            <Flex
-            direction="row"
-            justifyContent="space-around"
-            >
-                <Box>
-                <Text>
-                    Neosporiv kvalitet
-                </Text>
+            <Flex flexWrap="wrap" alignItems="center" maxW="900px" justifyContent="center" mx="auto" mt="10">
+
+                <Box as="a" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis={['auto', '45%']}>
+                    <Text fontSize="4xl" mb="2" fontFamily="normal">Neosporiv kvalitet &#x2606;</Text>
+                    <Text fontSize="lg" color="gray.500">Preko 30 godina rada. Uvek pratimo moderne trendove i tehnologije.</Text>
                 </Box>
-                <Box>
-                <Text>
-                    Povoljne cene
-                </Text>
+                <Box as="a" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis={['auto', '45%']}>
+                    <Text fontSize="4xl" mb="2" fontFamily="normal" mb="2">Efikasnost &#x26A1;</Text>
+                    <Text fontSize="lg" color="gray.500">Vreme je novac. A novac je prioritet i za Vas, i za nas.</Text>
                 </Box>
-                <Box>
-                <Text>
-                    Efikasnost
-                </Text>
+                <Box as="a" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis={['auto', '45%']}>
+                    <Text fontSize="4xl" mb="2" fontFamily="normal" mb="2">Povoljne cene &euro;</Text>
+                    <Text fontSize="lg" color="gray.500">Najpovoljnije cene po kvadratu u regionu. Tu smo za Vas.</Text>
+                </Box>
+                <Box as="a" p="6" m="4" borderWidth="1px" rounded="lg" flexBasis={['auto', '45%']}>
+                    <Text fontSize="4xl" mb="2" fontFamily="normal" mb="2">Pouzdanost &#x263A;</Text>
+                    <Text fontSize="lg" color="gray.500">Hiljade zadovoljnih klijenata. Hiljade objekata.</Text>
                 </Box>
             </Flex>
-        </div>
+        </>
     )
 }
 
