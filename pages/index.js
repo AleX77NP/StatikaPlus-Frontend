@@ -5,6 +5,7 @@ import Description from '../components/Description'
 import Contact from '../components/Contact'
 import Form from '../components/Form'
 import Footer from '../components/Footer'
+import QuestionList from '../components/QuestionList'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <Header />
         <Description />
         <About />
+        <QuestionList />
         <Contact />
         <Form />
         <Footer />
