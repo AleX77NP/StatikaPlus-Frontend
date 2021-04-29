@@ -25,7 +25,7 @@ import {
                         Projekti
                     </MenuItem>
                     <MenuItem onClick={() => scrollHandle(references[2])} icon={<QuestionIcon />}>
-                        FAQ
+                        FAQs
                     </MenuItem>
                     <MenuItem onClick={() => scrollHandle(references[3])} icon={<EmailIcon />}>
                         Kontakt
