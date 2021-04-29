@@ -12,22 +12,22 @@ import {
 
   import React from 'react'
   
-  const MenuHeader = () => {
+  const MenuHeader = ({scrollHandle, references}) => {
       return (
         <div>
             <Menu>
                 <MenuButton as={IconButton} aria-label="Options" icon={<HamburgerIcon />} variant="outline" />
                 <MenuList>
-                <MenuItem icon={<InfoIcon />} command="⌘T">
+                <MenuItem onClick={() => scrollHandle(references[0])} icon={<InfoIcon />}>
                         O nama
                     </MenuItem>
-                    <MenuItem icon={<DragHandleIcon />} command="⌘T">
+                    <MenuItem onClick={() => scrollHandle(references[1])} icon={<DragHandleIcon />}>
                         Projekti
                     </MenuItem>
-                    <MenuItem icon={<QuestionIcon />} command="⌘T">
+                    <MenuItem onClick={() => scrollHandle(references[2])} icon={<QuestionIcon />}>
                         FAQ
                     </MenuItem>
-                    <MenuItem icon={<EmailIcon />} command="⌘T">
+                    <MenuItem onClick={() => scrollHandle(references[3])} icon={<EmailIcon />}>
                         Kontakt
                     </MenuItem>
                 </MenuList>

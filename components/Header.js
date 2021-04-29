@@ -29,7 +29,7 @@ const Header = ({scrollHandle, references}) => {
                 <Spacer />
                 <Box pl={5}>
                 <div className={styles.menu}>
-                <MenuHeader />
+                <MenuHeader scrollHandle={scrollHandle} references={references} />
                 </div>
                 </Box>
             </Flex>
