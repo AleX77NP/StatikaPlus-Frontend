@@ -42,10 +42,10 @@ const ProjectList = () => {
     return (
         <div style={{marginTop: '50px', marginBottom: '50px'}}>
         <Title title="Naši projekti" />
-        <Flex flexDirection={["column","row"]} width="70%" mx="auto" my="40px" flexWrap="wrap" justifyContent="space-evenly" alignItems="center" overflowX="scroll">
+        <Flex flexDirection={["column","row"]} width="90%" mx="auto" my="40px" flexWrap="wrap" justifyContent="space-evenly" alignItems="center" overflowX="scroll">
             {
                 projects.map((project) => (
-                    <div key={project.name}>
+                    <div key={project.name} style={{maxWidth: '99%'}}>
                         <Project project={project} />
                     </div>
                 ))

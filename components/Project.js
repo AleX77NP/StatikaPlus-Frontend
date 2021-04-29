@@ -4,8 +4,8 @@ import { Box, Badge, Image, AspectRatio } from "@chakra-ui/react"
 const Project = ({project}) => {
     return (
     <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" my={4}>
-      <AspectRatio w="400px"  ratio={16 / 9}>
-        <Image src={project.image} alt="naruto" objectFit="cover" />
+      <AspectRatio w="400px" ratio={16 / 9}>
+        <Image src={project.image} alt="project" objectFit="cover" />
         </AspectRatio>
       <Box p="6">
         <Box d="flex" alignItems="baseline">
