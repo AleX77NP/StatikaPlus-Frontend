@@ -14,7 +14,7 @@ const Question = ({question}) => {
                 <h2>
                 <AccordionButton>
                     <Box flex="1" textAlign="left">
-                    <Text fontSize="xl" fontWeight="medium">
+                    <Text fontFamily="normal" fontSize="2xl" fontWeight="medium">
                     {question.title}
                     </Text>
                     </Box>
@@ -22,7 +22,7 @@ const Question = ({question}) => {
                 </AccordionButton>
                 </h2>
                 <AccordionPanel pb={4}>
-                <Text fontSize="xl" color="gray.600">
+                <Text fontFamily="normal" fontSize="2xl" color="gray.600">
                 {question.answer}
                 </Text>
                 </AccordionPanel>

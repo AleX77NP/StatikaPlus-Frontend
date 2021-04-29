@@ -1,18 +1,13 @@
 import React from 'react'
 import dynamic from 'next/dynamic'
-import {Text} from '@chakra-ui/react'
+import Title from './Title'
 
 const Map = dynamic(() => import('./Map'), { ssr: false })
 
 const Contact = () => {
     return (
         <div style={{marginTop: '40px',position: 'relative'}}>
-        <Text
-        style={{marginBottom: '40px'}}
-        fontSize="5xl"
-        fontWeight="thin"
-        textAlign="center"
-        >Kontakt</Text>
+        <Title title="Kontakt" />
         <Map />
         </div>
     )

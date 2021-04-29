@@ -2,40 +2,41 @@ import React, { useState } from 'react'
 import {
     Accordion,
     Flex,
-    Text,
   } from "@chakra-ui/react"
 import Question from './Question'
+import Title from './Title'
 
 const QuestionList = () => {
 
     const [questions] = useState([
         {
-            "title": "Koja je cena po metru kvadratnom, i da li je cena fiksna ili se moze menjati ?",
-            "answer": "Cena po metru kvadratnom je 1 evro."
+            "title": "Koja je cena po metru kvadratnom, i da li je cena fiksna ili se može menjati ?",
+            "answer": "Cena po metru kvadratnom je 1 evro, i fiksna je."
         }, 
         {
-            "title": "Da li je moguce placanje na rate ?",
-            "answer": "Da, placanje na rate je moguce."
+            "title": "Da li je moguće plaćanje na rate ?",
+            "answer": "Da, plaćanje na rate je moguće."
         },
         {
-            "title": "Da li je nadzor ukljucen u cenu projekta ?",
-            "answer": "Nadzor nije ukljucen u pocetnu cenu, i placa se odvojeno."
+            "title": "Da li je nadzor uključen u cenu projekta ?",
+            "answer": "Nadzor objekta nije uključen u cenu, i plaća se odvojeno."
+        }, 
+        {
+            "title": "Koliko iznosi cena za nadzor?",
+            "answer": "Cena nadzora je 2% od ukupne cene projekta."
         }
     ])
 
     return (
-        <div style={{marginTop: '40px', marginBottom: '40px'}}>
-        <Text
-        fontSize="5xl"
-        fontWeight="thin"
-        textAlign="center"
-        >Često postavljana pitanja</Text>
+        <div style={{marginTop: '50px', marginBottom: '50px'}}>
+        <Title title="Često postavljana pitanja" />
         <Flex flexDirection="column" width="70%" mx="auto" my="40px">
             <Accordion allowToggle>
             {
                 questions.map((question) => (
-                    
+                    <div key={question.title}>
                     <Question question={question} />
+                    </div>
                 ))
             }
             </Accordion>

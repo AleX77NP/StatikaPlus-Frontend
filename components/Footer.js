@@ -8,7 +8,12 @@ import {
   } from "@chakra-ui/react"
   import { ArrowUpIcon } from '@chakra-ui/icons'
 
-const Footer = () => {
+const Footer = ({scrollHandle, references}) => {
+
+    const toTop = () => {
+        window.scrollTo({top: '0', behavior: 'smooth'})
+    }
+
     return (
         <div style={{width: '100%', height: '300px', backgroundImage: 'linear-gradient(to left, #A60321, #3C038C)'}}>
             <Flex
@@ -35,15 +40,15 @@ const Footer = () => {
                     height="100%"
                     mx="auto"
                     >
-                        <Link fontSize="lg" color="white">O nama</Link>
-                        <Link fontSize="lg" color="white">Projekti</Link>
-                        <Link fontSize="lg" color="white">FAQ</Link>
-                        <Link fontSize="lg" color="white">Kontakt</Link>
+                        <Link onClick={() => scrollHandle(references[0])} fontSize="lg" color="white">O nama</Link>
+                        <Link onClick={() => scrollHandle(references[1])} fontSize="lg" color="white">Projekti</Link>
+                        <Link onClick={() => scrollHandle(references[2])} fontSize="lg" color="white">FAQs</Link>
+                        <Link onClick={() => scrollHandle(references[3])} fontSize="lg" color="white">Kontakt</Link>
                     </Flex>
                 </Box>
 
                 <Box mx="auto">
-                    <ArrowUpIcon w={8} h={8} color="white" />
+                    <ArrowUpIcon w={8} h={8} color="white" onClick={toTop} cursor="pointer" />
                 </Box>
 
             </Flex>

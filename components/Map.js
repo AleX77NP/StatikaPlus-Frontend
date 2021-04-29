@@ -8,7 +8,7 @@ const icon = L.icon({ iconUrl: "/marker-icon.png", iconSize: [25, 41], iconAncho
 
 const Map = () => {
     return (
-        <MapContainer center={[43.144928139962815, 20.51435888575006]} zoom={13} scrollWheelZoom={false} style={{ width: "100%", height: "400px" }}>
+        <MapContainer center={[43.144928139962815, 20.51435888575006]} zoom={13} scrollWheelZoom={false} style={{ width: "100%", height: "400px", marginTop: '50px' }}>
             <TileLayer
                 attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

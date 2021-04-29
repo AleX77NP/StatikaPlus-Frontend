@@ -5,7 +5,7 @@ import {Flex, Box, Spacer, Text} from '@chakra-ui/react'
 import Image from 'next/image'
 import styles from './Header.module.css'
 
-const Header = () => {
+const Header = ({scrollHandle, references}) => {
     return (
         <div>
             <Flex ml={10} mr={10} mt={10}
@@ -23,7 +23,7 @@ const Header = () => {
                 <Spacer />
                 <Box>
                 <div className={styles.nav}>
-                <NavTab />
+                <NavTab scrollHandle={scrollHandle} references={references} />
                 </div>
                 </Box>
                 <Spacer />
